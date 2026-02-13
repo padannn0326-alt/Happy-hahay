@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop id="bgVideo">
+    <source src="Pidio.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+
+<!-- LOCK SCREEN -->
+<div id="lockscreen">
+    <h2>Masukkan Password 🎂</h2>
+    <input type="password" id="password" placeholder="Tanggal Jadian (hayooo)">
+    <button onclick="checkPassword()">Masuk ❤️</button>
+    <p id="error"></p>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent" class="hidden">
+
+    <div class="opening">
+        <h1 id="bigName"></h1>
+    </div>
+
+    <div id="countdown"></div>
+
+    <div class="card">
+        <h1>🎉 Happy Birthday Bububbb 🎉</h1>
+        <h2>Untukkkk kamuuuu yangg berumurrr 18, Cintaaaakuuuuu ❤️</h2>
+
+        <img src="Beh.jpg" class="photo">
+
+        <p id="typingText"></p>
+
+        <button onclick="showSurprise()">Klik Surprise 🎁</button>
+
+        <div id="surprise" class="hidden">
+            🎂 Semogaaaaa panjaaaang umuuuur,sehattt selaluuu dan selaluuu menjadiii amuuuyynaaa aaannnn 💖
+        </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline">
+        <h2>Perjalanan Kita 💞</h2>
+
+        <div class="moment">
+            <h3>💍 7 Desember 2024</h3>
+            <p>
+                Hariiii dimanaaaa kitaaaa resmiii jadiiii "pasangann".
+                Hariii dimanaaaa aaannn nggak cuma punya amiii…
+                tapi miliki kamu muuuyyy.Terimakasiihh sudaahh
+                mauu menjadiii pacallnaa aannn saatt ituu daann sampeee
+                sekaraaanggg
+            </p>
+        </div>
+
+        <div class="moment">
+            <h3>🤍 Bahasa Kita Sendiri</h3>
+            <p>
+                "Nyebring dan seruruh."
+                Awalan dari kata nyebrang dan seluruh mungkin orang lain nggak ngerti.
+                Tapi setiap denger itu aku selalu senyum.
+                Karena itu cuma punya kita dan selamanya buat kita.
+            </p>
+        </div>
+
+        <div class="gallery">
+    <h2>Photos 📸</h2>
+
+    <div class="gallery">
+    <h2>🥰🥰🥰🥰❤️❤️❤️❤️</h2>
+
+    <div class="slider" id="slider">
+        <div class="slides">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+    </div>
+    
+    
+
+    <div class="dots" id="dots"></div>
+</div>
+
+
+
+
+</div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="Wiss.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voiceNote">
+    <source src="Bujed.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- CONFETTI CDN -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
